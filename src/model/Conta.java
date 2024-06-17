@@ -1,6 +1,6 @@
 package conta.model;
 
-public class Conta {
+public abstract class Conta {
 
 	private int numero;
 	private int agencia;
@@ -14,7 +14,7 @@ public class Conta {
 		this.tipo = tipo;
 		this.titular = titular;
 		this.saldo = saldo;
-		//atributo da Classe = parâmetro do Método Construtor
+		//atributo da classe = parâmetro do método construtor
 	
 	   
 		
@@ -76,6 +76,7 @@ public class Conta {
 		this.setSaldo(this.getSaldo() + valor);
 	}
 
+	
 	public void visualizar() {
 		String tipo = "";
 		
@@ -87,6 +88,7 @@ public class Conta {
 			tipo = "Conta Poupança";
 			break;
 		}
+		
 		
 		System.out.println("\n\n***********************************************************");
 		System.out.println("Dados da Conta:");
